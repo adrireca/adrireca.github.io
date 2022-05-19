@@ -680,6 +680,7 @@ body{
 @media(max-width: 690px){
     #header{
         min-height: 804px;
+        background-color: #000000;
     }
     #video{
         min-height: 804px;
@@ -690,7 +691,7 @@ body{
     }
     #header .overlay{
         min-height: 804px;
-        opacity: 1;
+        display: none;
     }
     #header .titulo{
         margin-top: 100px;
