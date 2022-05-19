@@ -686,9 +686,11 @@ body{
     }
     #video video{
         height: 804px;
+        display: none;
     }
     #header .overlay{
         min-height: 804px;
+        opacity: 1;
     }
     #header .titulo{
         margin-top: 100px;
