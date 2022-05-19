@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi portafolio</title>
+    
+    <!-- favicon -->
+    <link rel="icon" type="image/svg" href="favicon/favicon1.svg">
+
+    <!-- fontAwesome -->
+    <link rel="stylesheet" href="fontawesome-free-5.15.4-web/fontawesome-free-5.15.4-web/css/all.css"/>
+
+    <!-- estilos css y bootstrap -->
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/stylesPortafolio.css" />
+
+    <!--jquery-->
+    <script src="JQuery/jquery-3.6.0.min.js"></script>
+
+    <!-- js bootstrap -->
+    <script type="text/javascript" src="JQuery/popper.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- mi js -->
+    <script src="js/portafolio.js"></script>
+
+
+</head>
+
+<body>
+
+    <!-- puntero personalizado -->
+    <div id="sigueme"></div>
+
+
+    <!-- header -->
+    <header id="header">
+
+
+        <!-- video header -->
+        <div id="video">
+            <video src="video/Person Typing Fast.mp4" muted autoplay loop></video>
+        </div>
+
+        <!-- capa video -->
+        <div class="overlay"></div>
+
+
+
+        <!-- redes sociales -->
+        <div id="social">
+            <a href="https://linkedin.com/in/adrian-reyes-calero-aa0395225/" target="_blank"><img
+                    src="imgs/social_linkedin.svg" /></a>
+            <a href="https://github.com/reyes311990" target="_blank"><img src="imgs/social_github.svg" /></a>
+            <a href="https://es-es.facebook.com/adrian.reyescalero" target="_blank"><img
+                    src="imgs/social_facebook.svg" /></a>
+        </div>
+
+
+        <!-- menu -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0 w-100">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#" id="link_about">Sobre mí...</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#" id="link_skillset"><span
+                                    class="color-skillset">Skillset</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#"
+                                id="link_seccion_portafolio">Portafolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#" id="link_formacion" tabindex="-1"
+                                aria-disabled="true">Formación</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#" id="link_contacto">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="clearfix"></div>
+
+
+        <!-- título e imagen-header -->
+        <div class="row">
+            <div class="col-5 titulo d-block">
+                <h1>
+                    <span>H</span><span>o</span><span>l</span><span>a</span><span>,</span><br>
+                    <span>s</span><span>o</span><span>y</span>
+                    <strong>A</strong><span>d</span><span>r</span><span>i</span><span>á</span><span>n</span><span>,</span>
+                    <br>
+                    <span>d</span><span>e</span><span>s</span><span>a</span><span>r</span><span>r</span><span>o</span><span>l</span><span>l</span><span>a</span><span>d</span><span>o</span><span>r</span>
+                    <span>w</span><span>e</span><span>b</span>
+                </h1>
+                <p class="text-secondary">Desarrollador frontend</p>
+                <form class="d-flex justify-content-center mt-4">
+                    <a href="#" class="btn btn-outline-success" id="link-contacto-tit">Contacto</a>
+                </form>
+            </div>
+            <div class="col imagen-header text-center">
+                <img src="imgs/workspace1-flat-lay_122064.svg" class="icon_header">
+            </div>
+        </div>
+
+
+    </header>
+
+
+
+
+
+
+
+
+
+    <!-- sección principal -->
+    <div class="row">
+
+        <!-- sobre mí -->
+        <section id="about" class="col-md-8">
+            <div class="barra_seccion">
+                <h3><span class="color-letra">S</span>obre <span class="color-letra">m</span>í...</h3>
+            </div>
+
+            <div class="sobre_mi">
+                
+                <div class="img_perfil">
+                    <div class="marco-foto"></div>
+                    <img src="imgs/foto_perfil_1.png" />
+                </div>
+                
+
+                <div class="descripcion">
+                    <p>La principal área de trabajo que me interesa es la parte del frontend. Me apasiona sobre todo el
+                        desarrollo de páginas web.</p>
+                    <p>Este interés por el mundo de la programación tuvo lugar cuando comencé a cursar un módulo de
+                        grado superior de FP en el instituto,
+                        concretamente el ciclo formativo de Desarrollo de Aplicaciones Web. Desde entonces, no he parado
+                        de investigar
+                        y seguir aprendiendo.</p>
+                    <p>Me considero una persona autodidacta en constante aprendizaje en nuevas tecnologías, responsable
+                        y con muchas
+                        ganas de seguir avanzando y perfeccionando conceptos.</p>
+                </div>
+            </div>
+
+
+
+            <!-- skillset -->
+            <section id="skillset">
+                <div class="barra_seccion">
+                    <h3><span class="color-letra">Skill</span>sets</h3>
+                    <hr class="text-white">
+                </div>
+                <div id="slider" class="carousel slide" data-ride="carousel">
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active skillsets" data-bs-toggle="tooltip" title="html5">
+                            <img class="d-block mx-auto" src="skills/html5.svg" />
+                        </div>
+                        <div class="carousel-item skillsets" data-bs-toggle="tooltip" title="Css3">
+                            <img class="d-block mx-auto" src="skills/css3.svg" />
+                        </div>
+                        <div class="carousel-item skillsets" data-bs-toggle="tooltip" title="JavaScript">
+                            <img class="d-block mx-auto" src="skills/js.svg" />
+                        </div>
+                        <div class="carousel-item skillsets" data-bs-toggle="tooltip" title="Sass">
+                            <img class="d-block mx-auto" src="skills/sass.svg" />
+                        </div>
+                        <div class="carousel-item skillsets" data-bs-toggle="tooltip" title="Bootstrap">
+                            <img class="d-block mx-auto" src="skills/bootstrap.svg" />
+                        </div>
+                        <div class="carousel-item skillsets" data-bs-toggle="tooltip" title="TypeScript">
+                            <img class="d-block mx-auto" src="skills/typescript.svg" />
+                        </div>
+                        <div class="carousel-item skillsets" data-bs-toggle="tooltip" title="Angular">
+                            <img class="d-block mx-auto" src="skills/angular.svg" />
+                        </div>
+                        <div class="carousel-item skillsets" data-bs-toggle="tooltip" title="Jquery">
+                            <img class="d-block mx-auto" src="skills/jquery.svg" />
+                        </div>
+                        <!-- <div class="carousel-item skillsets" data-bs-toggle="tooltip" title="React">
+                            <img class="d-block mx-auto" src="skills/react.svg" />
+                        </div> -->
+                        <div class="carousel-item skillsets" data-bs-toggle="tooltip" title="Node">
+                            <img class="d-block mx-auto" src="skills/node.svg" />
+                        </div>
+                        <div class="carousel-item skillsets" data-bs-toggle="tooltip" title="Git">
+                            <img class="d-block mx-auto" src="skills/git.svg" />
+                        </div>
+                        <!-- <div class="carousel-item skillsets" data-bs-toggle="tooltip" title="Photoshop">
+                            <img class="d-block mx-auto" src="skills/photoshop.svg" />
+                        </div> -->
+                        <div class="carousel-item skillsets" data-bs-toggle="tooltip" title="MongoDB">
+                            <img class="d-block mx-auto" src="skills/mongo.svg" />
+                        </div>
+                        <!-- <div class="carousel-item skillsets" data-bs-toggle="tooltip" title="Bash">
+                            <img class="d-block mx-auto" src="skills/bash.svg" />
+                        </div> -->
+                        <div class="carousel-item skillsets" data-bs-toggle="tooltip" title="Sql">
+                            <img class="d-block mx-auto" src="skills/sql.svg" />
+                        </div>
+                        <div class="carousel-item skillsets" data-bs-toggle="tooltip" title="wordpress">
+                            <img class="d-block mx-auto" src="skills/wordpress.svg" />
+                        </div>
+                        <!-- <div class="carousel-item skillsets" data-bs-toggle="tooltip" title="Java">
+                            <img class="d-block mx-auto" src="skills/java.svg" />
+                        </div> -->
+                    </div>
+
+                    <a class="carousel-control-prev" href="#slider" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </a>
+                    <a class="carousel-control-next" href="#slider" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </a>
+                </div>
+            </section>
+        </section>
+
+
+        <section class="col-md-4" id="lateral">
+
+        </section>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!-- portafolio -->
+    <div id="seccion-portafolio">
+        <div class="barra_seccion">
+            <h3>Portafolio</h3>
+            <hr>
+        </div>
+
+        <section id="portafolio" class="row col-md-11">
+
+            <div class="card animated_box col p-0" id="proyecto">
+                <img class="card-img-top img-fluid"
+                    src="imgs/imgs_proyectos/galeria_fotos.png" />
+                <div class="card-body mt-2">
+                    <h3 class="card-title">Proyecto 1</h3>
+                    <p class="card-text">
+                        Galería de fotos responsive desarrollada con jquery (fancybox).
+                    </p>
+
+                </div>
+                <div class="project-link">
+                    <a href="../PORTAFOLIO/PROYECTO_galeria_fotos2/galeria_fotos.html" class="btn btn-dark mt-3"
+                        target="_blank">Entrar</a>
+                </div>
+            </div>
+            <div class="card animated_box col p-0" id="proyecto">
+                <img class="card-img-top img-fluid"
+                    src="imgs/imgs_proyectos/proyecto_web_deporte.png" />
+                <div class="card-body mt-2">
+                    <h3 class="card-title">Proyecto 2</h3>
+                    <p class="card-text">
+                        Web de deporte.
+                    </p>
+                </div>
+                <div class="project-link">
+                    <a href="../PORTAFOLIO/PROYECTO_pagina_web_deporte/pagina_web_deporte.html"
+                        class="btn btn-dark mt-3" target="_blank">Entrar</a>
+                </div>
+            </div>
+            <div class="card animated_box col p-0" id="proyecto">
+                <img class="card-img-top img-fluid" src="imgs/imgs_proyectos/app-to-do-list.png" />
+                <div class="card-body mt-2">
+                    <h3 class="card-title">Proyecto 3</h3>
+                    <p class="card-text">
+                        App lista de tareas con vanilla js.
+                    </p>
+                </div>
+                <div class="project-link">
+                    <a href="../PORTAFOLIO/APP-lista-tareas/app-lista.html" class="btn btn-dark mt-3"
+                        target="_blank">Entrar</a>
+                </div>
+            </div>
+            <div class="card animated_box col p-0" id="proyecto">
+                <img class="card-img-top img-fluid" src="imgs/imgs_proyectos/app-chat.png" />
+                <div class="card-body mt-2">
+                    <h3 class="card-title">Proyecto 4</h3>
+                    <p class="card-text">
+                        App chat responsive. Conexión en tiempo real con nodeJS y socket-io.
+                    </p>
+                </div>
+                <div class="project-link">
+                    <a href="../PORTAFOLIO/APP-chat/client/index.html" class="btn btn-dark mt-3"
+                        target="_blank">Entrar</a>
+                </div>
+            </div>
+            <div class="card animated_box col p-0" id="proyecto">
+                <img class="card-img-top img-fluid" src="imgs/imgs_proyectos/tienda_online.png" />
+                <div class="card-body mt-2">
+                    <h3 class="card-title">Proyecto 5</h3>
+                    <p class="card-text">
+                        App e-commerce (en desarrollo...).
+                    </p>
+                </div>
+                <div class="project-link">
+                    <a href="../PORTAFOLIO/APP_tienda_online/index.html" class="btn btn-dark mt-3"
+                        target="_blank">Entrar</a>
+                </div>
+            </div>
+    </div>
+
+    </section>
+
+
+
+
+
+    <!-- formación -->
+    <div class="row" id="formacion-contacto">
+        <section class="col-md-6" id="formacion">
+            <div class="barra_seccion">
+                <h3>Formación</h3>
+                <hr>
+            </div>
+
+            <p>
+                <a class="btn btn-outline-success" data-bs-toggle="collapse" href="#titulo-html" role="button"
+                    aria-expanded="false" aria-controls="collapseExample">
+                    HTML
+                </a>
+                <a class="btn btn-outline-success" data-bs-toggle="collapse" href="#titulo-css3" role="button"
+                    aria-expanded="false" aria-controls="collapseExample">
+                    Css3
+                </a>
+                <a class="btn btn-outline-success" data-bs-toggle="collapse" href="#titulo-javascript" role="button"
+                    aria-expanded="false" aria-controls="collapseExample">
+                    JavaScript
+                </a>
+            </p>
+            <div class="collapse" id="titulo-html">
+                <div class="card card-body mt-3 w-50 m-auto mb-3">
+                    <img src="titulos/titulo_html.jpg" />
+                </div>
+            </div>
+            <div class="collapse" id="titulo-css3">
+                <div class="card card-body mt-3 w-50 m-auto mb-3">
+                    <img src="titulos/titulo_css3.jpg" />
+                </div>
+            </div>
+            <div class="collapse" id="titulo-javascript">
+                <div class="card card-body mt-3 w-50 m-auto mb-3">
+                    <img src="titulos/titulo_javascript.jpg" />
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <!-- contacto -->
+        <section class="col-md-6" id="contacto">
+            <div class="barra_seccion">
+                <h3>Contacto</h3>
+                <hr>
+            </div>
+
+            <div id="form" class="p-5">
+                <form method="post" onsubmit="return false;">
+                    <p>¿Tienes alguna pregunta? Envíame un mensaje...</p>
+                    <div class="mb-3 mt-4">
+                        <label for="validationDefaultUsername" class="form-label">Email</label>
+                        <div class="input-group">
+                            <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                            <input type="text" class="form-control" id="email" aria-describedby="inputGroupPrepend2"
+                                required placeholder="name@ejemplo">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <input id="boton-form" class="btn btn-dark" type="submit" value="Enviar mensaje" />
+                        </div>
+                </form>
+            </div>
+        </section>
+    </div>
+
+
+
+
+
+    <!-- footer -->
+    <footer id="footer">
+        Diseñado y desarrollado por Adrián Reyes &copy;
+
+        <div id="subir">
+            <i class="fas fa-arrow-up"></i>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+</body>
+
+</html>
