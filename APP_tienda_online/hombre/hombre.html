@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda online</title>
+
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="imgs/favicon.png"/>
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="../fontawesome-free-5.15.4-web/fontawesome-free-5.15.4-web/css/all.css" />
+
+    <!-- plugin jquery nav -->
+    <link rel="stylesheet"
+        href="../jquery/Responsive-Mobile-Aware-jQuery-Dropdown-Navigation-Plugin-responsiveNav/Responsive-Mobile-Aware-jQuery-Dropdown-Navigation-Plugin-responsiveNav/css/styles.css" />
+    <!-- jquery -->
+    <script src="../jquery/jquery-3.6.0.min.js"></script>
+    <!-- plugin jquery nav -->
+    <script
+        src="../jquery/Responsive-Mobile-Aware-jQuery-Dropdown-Navigation-Plugin-responsiveNav/Responsive-Mobile-Aware-jQuery-Dropdown-Navigation-Plugin-responsiveNav/js/jquery.responsiveNav.js"></script>
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
+
+    <!-- mi css -->
+    <link rel="stylesheet" href="css/hombre.css" />
+
+    <!-- bootstrap js -->
+    <script src="../bootstrap/js/bootstrap.bundle.js"></script>
+
+    <!-- mi js -->
+    <script src="js/hombre.js"></script>
+</head>
+
+<body>
+
+    <!-- header -->
+    <header id="header">
+        <div class="container-flex">
+            <div class="div-nom-genero">
+                <div class="nom-empresa"><a href="../index.html">TOTAL Look</a></div>
+                <div class="genero">
+                    <ul>
+                        <li class="woman"><a href="../index.html">Mujer</a></li>
+                        <li class="man"><a href="hombre.html">Hombre</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="icons">
+                <a id="btn-search" class="icon"><i class="fas fa-search"></i></a>
+                <a class="icon" href="#"><i class="fas fa-sign-out-alt"></i></a>
+                <a class="icon"><i class="far fa-envelope"></i></a>
+                <a class="icon"><i class="fas fa-shopping-bag"></i></a>
+            </div>
+        </div>
+
+        <div class="logo">
+            <a href="../index.html"><img src="imgs/logotipo.png" /></a>
+        </div>
+    </header>
+
+
+
+
+    <!-- search form -->
+    <div class="search-form">
+        <div id="close-search" class="fas fa-times"></div>
+
+        <form action="">
+            <input type="search" name="" placeholder="Busca aquí..." id="search-box"/>
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+    </div>
+
+
+
+
+
+    <!-- menu -->
+    <div id="nav">
+        <ul>
+            <li class="menu-opcion"><a href="#">Ropa</a>
+                <ul>
+                    <li><a href="#">Cazadoras y abrigos</a></li>
+                    <li><a href="#">Chalecos</a></li>
+                    <li><a href="#">Sudaderas</a></li>
+                    <li><a href="#">Jerséis</a></li>
+                    <li><a href="#">Camisas</a></li>
+                    <li><a href="#">Camisetas</a></li>
+                    <li><a href="#">Pantalones</a></li>
+                    <li><a href="#">Jeans</a></li>
+                    <li><a href="#">Bermudas</a></li>
+                </ul>
+            </li>
+
+            <li class="menu-opcion"><a href="#">Zapatos</a>
+                <ul>
+                    <li><a href="#">Zapatillas</a></li>
+                    <li><a href="#">Deportivas</a></li>
+                    <li><a href="#">Zapatos vestir</a></li>
+                    <li><a href="#">Sandália</a></li>
+                </ul>
+            </li>
+
+            <li class="menu-opcion"><a href="#">Accesorios</a>
+                <ul>
+                    <li><a href="#">Gorros y gorras</a></li>
+                    <li><a href="#">Calcetines</a></li>
+                    <li><a href="#">Bañadores</a></li>
+                    <li><a href="#">Cinturones</a></li>
+                    <li><a href="#">Gafas</a></li>
+                </ul>
+            </li>
+
+            <li class="menu-opcion"><a href="#">Novedades</a></li>
+
+            <li class="menu-opcion"><a href="#">Blog</a></li>
+
+            <li class="menu-opcion"><a href="#">Contacto</a></li>
+        </ul>
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <!-- sección principal -->
+    <main id="container">
+
+        <!-- slider -->
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="imgs/slider1.jpg" class="d-block" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="imgs/slider2.jpg" class="d-block" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="imgs/slider3.jpg" class="d-block" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="imgs/slider4.jpg" class="d-block" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="imgs/slider5.jpg" class="d-block" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+
+
+
+
+        <!-- titulo -->
+        <div id="titulo">
+            <h1>Tienda de ropa online</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe praesentium deserunt dolore accusantium
+                quae
+                accusamus perspiciatis incidunt beatae voluptatibus illo fugiat at quod soluta, corrupti expedita dicta
+                excepturi eveniet voluptas dolores libero debitis officia enim nam maxime! Quisquam, repellat explicabo.
+            </p>
+        </div>
+
+
+
+
+
+
+        <!-- categorías -->
+        <div id="category" class="row">
+            <div class="img-cat col me-2 ms-2">
+                <a href="#"><img src="imgs/ropa.jpg" alt="..."></a>
+                <div class="middle">
+                    <div class="text_category">Ropa</div>
+                </div>
+            </div>
+            <div class="img-cat col me-2 ms-2">
+                <a href="#"><img src="imgs/zapatillas.jpg" alt="..."></a>
+                <div class="middle">
+                    <div class="text_category">Zapatos</div>
+                </div>
+            </div>
+            <div class="img-cat col me-2 ms-2">
+                <a href="#"><img src="imgs/accesorios.jpg" alt="..."></a>
+                <div class="middle">
+                    <div class="text_category">Accesorios</div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        <!-- asesoría -->
+        <div id="asesoria">
+            <a href="#" class="icon"><i class="far fa-star"></i></a>
+            <h3>Asesores de imagen</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe praesentium deserunt dolore accusantium
+                quae
+                accusamus perspiciatis incidunt beatae voluptatibus illo fugiat at quod soluta, corrupti expedita dicta
+                excepturi eveniet voluptas dolores libero debitis officia enim nam maxime! Quisquam, repellat explicabo.
+            </p>
+        </div>
+
+
+
+
+
+
+
+
+        <!-- buscador -->
+        <div id="buscador">
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Buscar productos..." aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+        </div>
+
+    </main>
+
+
+
+
+
+
+
+    <!-- footer -->
+    <footer id="footer">
+        <div id="footer-enlaces">
+            <ul>
+                <li><a href="../sobre_nosotros/sobre_nosotros.html">Sobre nosotros</a></li>
+                <li><a href="#">Mi cuenta</a></li>
+                <li><a href="#">Aviso legal</a></li>
+                <li><a href="#">Política de privacidad</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </div>
+        <div id="footer-parrafo">
+            <p>TOTAL Look - Tienda de ropa online &copy; 2021 Todos los derechos reservados</p>
+        </div>
+        <div id="footer-icons">
+            <div id="credit-cards">
+                <i class="fab fa-cc-paypal"></i>
+                <i class="fas fa-credit-card"></i>
+                <i class="fab fa-cc-mastercard"></i>
+            </div>
+            <div id="subir">
+                <a class="icon" href="#"><i class="fas fa-angle-up"></i></a>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

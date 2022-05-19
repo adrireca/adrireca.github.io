@@ -1,0 +1,330 @@
+/* general */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "lifeSavers";
+  src: url("../../fonts/Life_Savers/LifeSavers-Regular.ttf");
+}
+
+body {
+  font-family: "lifeSavers";
+}
+
+#header {
+  margin: 10px;
+  border-bottom: 1px solid #EAEAEA;
+}
+
+#header .nom-empresa {
+  padding-bottom: 5px;
+  margin-top: 10px;
+  font-size: 30px;
+}
+
+#header .nom-empresa a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+#container {
+  width: 55%;
+  height: auto;
+  margin: 0 auto;
+}
+
+#container #container-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: justify;
+  margin-top: 20px;
+  border-bottom: 1px solid #EAEAEA;
+}
+
+#container #container-flex .seccion {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+#container #container-flex .seccion .img1 {
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+#container #container-flex .seccion .img1 img {
+  width: 100%;
+}
+
+#container #container-flex .seccion .img2 {
+  width: 85%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+#container #container-flex .seccion .img2 img {
+  width: 100%;
+}
+
+#container #container-flex .seccion .contenido {
+  width: 70%;
+  margin: 0 auto;
+}
+
+#container #container-flex .seccion .contenido h3 {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+#container #container-flex .seccion .contenido p {
+  font-size: 17px;
+  letter-spacing: 2px;
+  margin-bottom: 50px;
+}
+
+#container #container-flex .seccion .contenido .divMore {
+  cursor: pointer;
+}
+
+#container #container-flex .seccion .contenido .divMore h4 {
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+
+#container #container-flex .seccion .contenido .divMore #arrow {
+  width: 100%;
+  text-align: center;
+  margin: 20px auto;
+  -webkit-animation: flechaMove 1s linear infinite;
+          animation: flechaMove 1s linear infinite;
+}
+
+@-webkit-keyframes flechaMove {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  25% {
+    -webkit-transform: translateY(10%);
+            transform: translateY(10%);
+  }
+  50% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  75% {
+    -webkit-transform: translateY(-10%);
+            transform: translateY(-10%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes flechaMove {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  25% {
+    -webkit-transform: translateY(10%);
+            transform: translateY(10%);
+  }
+  50% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  75% {
+    -webkit-transform: translateY(-10%);
+            transform: translateY(-10%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+#container #container-flex .seccion .contenido .parrafoMore {
+  margin-bottom: 0;
+}
+
+#container #container-flex .seccion .contenido h5 {
+  width: 100%;
+  text-align: center;
+  margin: 10px 0 50px 0;
+  letter-spacing: 2px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+/* footer */
+#footer {
+  width: 55%;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+#footer #footer-enlaces {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#footer #footer-enlaces ul {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+#footer #footer-enlaces ul li {
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+  list-style: none;
+  text-align: center;
+}
+
+#footer #footer-enlaces ul li a {
+  text-decoration: none;
+  color: black;
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+
+#footer #footer-enlaces ul li a:hover {
+  color: #ccc;
+}
+
+#footer #footer-parrafo {
+  width: 100%;
+  margin-top: 20px;
+}
+
+#footer #footer-parrafo p {
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+
+#footer #footer-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+}
+
+#footer #footer-icons #credit-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 10px;
+}
+
+#footer #footer-icons #credit-cards .fab, #footer #footer-icons #credit-cards .fas {
+  font-size: 30px;
+}
+
+#footer #footer-icons #subir {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#footer #footer-icons #subir .icon {
+  font-size: 30px;
+  color: black;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+#footer #footer-icons #subir .icon:hover {
+  color: #FFC974;
+}
+
+@media (max-width: 1400px) {
+  #container {
+    width: 70%;
+  }
+  #footer {
+    width: 70%;
+  }
+}
+
+@media (max-width: 1100px) {
+  #container {
+    width: 80%;
+  }
+  #container #container-flex .contenido p {
+    font-size: 15px;
+  }
+  #footer {
+    width: 80%;
+  }
+}
+
+@media (max-width: 900px) {
+  #header {
+    text-align: center;
+  }
+  #container {
+    width: 95%;
+  }
+  #footer {
+    width: 95%;
+  }
+}
+
+@media (max-width: 650px) {
+  .nom-empresa {
+    margin-top: 50px !important;
+    margin-bottom: 50px;
+  }
+  .nom-empresa a {
+    font-size: 60px;
+  }
+  #container {
+    width: 100%;
+  }
+  #container #container-flex {
+    display: block !important;
+  }
+  #container #container-flex .contenido h3 {
+    text-align: center;
+  }
+  #footer {
+    margin-top: 50px;
+  }
+  #footer #footer-enlaces ul {
+    display: block;
+  }
+  #footer #footer-parrafo {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .nom-empresa a {
+    font-size: 50px;
+  }
+}
+/*# sourceMappingURL=sobre_nosotros.css.map */

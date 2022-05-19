@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/jquery.responsiveNav.js"></script>
+    <script>
+      $(document).ready(function(){
+
+        var $nav = $('#nav');
+        //var $nav2 = $nav.clone().addClass('nav2').appendTo('body'); //duplicate the nav for different styles
+
+        $nav.responsiveNav({
+            smallWidthMax: 730,
+            generateSubSectionLinks:false,
+            sectionSecondTapGo:true
+        });
+
+        // $nav2.responsiveNav({
+        //     smallWidthMax: 730,
+        //     generateBackLinks:true,
+        //     generateSubSectionLinks:true,
+        //     menuHandleText:'Menu 2'
+        // });
+
+        // $('<hr/>').insertBefore($nav2);
+
+      });
+    </script>
+</head>
+<body>
+<div id="nav">
+    <ul>
+        <li class="business"><a href="/about">About Us</a>
+            <ul>
+                <li><a href="/about">Mission Statement</a></li>
+                <li><a href="/about/history">History</a></li>
+            </ul>
+        </li>
+
+
+        <li class="living"><a href="/products">Products</a>
+            <ul>
+
+                <li><a href="/products">Product Search</a></li>
+                <li><a href="/products/t-shirts">T-Shirts</a></li>
+                <li><a href="/products/jeans">Jeans</a></li>
+                <li><a href="/products/jammies">Jammies</a></li>
+                <li><a href="/products/misc">Misc. Apparel</a>
+                    <ul>
+                        <li><a href="/products/misc/hats">Hats</a></li>
+                        <li><a href="/products/misc/sandals">Sandals</a></li>
+                        <li><a href="/products/misc/accessories">Accessories</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+
+        <li><a href="/benefits">Benefits</a>
+            <ul>
+                <li><a href="/benefits">Overview</a></li>
+                <li><a href="/benefits/customer-services">Customer Services</a></li>
+                <li><a href="/benefits/24-hour-support">24 Hour Support</a></li>
+            </ul>
+        </li>
+
+        <li><a href="/media">Media</a>
+            <ul>
+                <li><a href="/media/news">In The News</a></li>
+                <li><a href="/media/whitepapers">Whitepapers</a></li>
+                <li><a href="/media/photos-video">Photos & Video</a></li>
+            </ul>
+        </li>
+        <li><a href="/contact">Contact Us</a>
+            <ul>
+                <li><a href="/contact/sales">Sales</a></li>
+                <li><a href="/contact/support">Support</a></li>
+
+            </ul>
+        </li>
+        <li><a href="/contact/retail-locations">Find A Retailer</a></li>
+    </ul>
+
+</div>
+<!-- END[ #nav ] -->
+</body>
+</html>

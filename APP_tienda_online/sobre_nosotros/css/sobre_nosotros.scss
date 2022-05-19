@@ -1,0 +1,326 @@
+//variables generales
+$font_family_general: 'lifeSavers';
+$width: 55%;
+$margin: 0 auto;
+$icon_size: 30px;
+$yellow: #FFC974;
+$sizeParrafo: 17px;
+$espacio_letras: 2px;
+$borde: 1px solid #EAEAEA;
+
+
+
+/* general */
+*{
+    padding: 0;
+    margin: 0;
+}
+@font-face{
+    font-family: $font_family_general;
+    src: url("../../fonts/Life_Savers/LifeSavers-Regular.ttf");
+}
+body{
+    font-family: $font_family_general;
+}
+
+
+
+
+// header
+#header{
+    margin: 10px;
+    border-bottom: $borde;
+
+    .nom-empresa{
+        padding-bottom: 5px;
+        margin-top: 10px;
+        font-size: 30px;
+
+        a{
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+    }
+}
+
+
+
+
+
+//principal
+#container{
+    width: $width;
+    height: auto;
+    margin: $margin;
+
+    #container-flex{
+        display: flex;
+        text-align: justify;
+        margin-top: 20px;
+        border-bottom: $borde;
+
+        .seccion{
+            flex-basis: 50%;
+
+            .img1{
+                width: 70%;
+                margin: $margin;
+                margin-bottom: 50px;
+    
+                img{
+                    width: 100%;
+                }
+            }
+            .img2{
+                width: 85%;
+                margin: $margin;
+                margin-bottom: 50px;
+    
+                img{
+                    width: 100%;
+                }
+            }
+            .contenido{
+                width: 70%;
+                margin: $margin;
+    
+                h3{
+                    margin-bottom: 20px;
+                    text-transform: uppercase;
+                    letter-spacing: $espacio_letras;
+                }
+    
+                p{
+                    font-size: $sizeParrafo;
+                    letter-spacing: $espacio_letras;
+                    margin-bottom: 50px;
+                }
+    
+                .divMore{
+                    cursor: pointer;
+
+                    h4{
+                        text-transform: uppercase;
+                        text-align: center;
+                        width: 100%;
+                        font-size: 13px;
+                        letter-spacing: $espacio_letras;
+                    }
+    
+                    #arrow{
+                        width: 100%;
+                        text-align: center;
+                        margin: 20px auto;
+                        animation: flechaMove 1s linear infinite;
+    
+                        @keyframes flechaMove{
+                            0%{
+                                transform: translateY(0);
+                            }
+                            25%{
+                                transform: translateY(10%);
+                            }
+                            50%{
+                                transform: translateY(0);
+                            }
+                            75%{
+                                transform: translateY(-10%);
+                            }
+                            100%{
+                                transform: translateY(0);
+                            }
+                        }
+                    }
+                }
+
+                .parrafoMore{
+                    margin-bottom: 0;
+                }
+
+                h5{
+                    width: 100%;
+                    text-align: center;
+                    margin: 10px 0 50px 0;
+                    letter-spacing: $espacio_letras;
+                    font-size: 15px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+/* footer */
+#footer{
+    width: $width;
+    margin: $margin;
+    margin-top: 100px;
+
+    #footer-enlaces{
+        display: flex;
+
+        ul{
+            display: inline-flex;
+            width: 100%;
+            margin-bottom: 1rem;
+
+            li{
+                flex-basis: 20%;
+                list-style: none;
+                text-align: center;
+
+                a{
+                    text-decoration: none;
+                    color: black;
+                    letter-spacing: $espacio_letras;
+                    font-size: 14px;
+                }
+                a:hover{
+                    color: #ccc;
+                }
+            }
+        }
+    }
+    #footer-parrafo{
+        width: 100%;
+        margin-top: 20px;
+
+        p{
+            text-align: center;
+            letter-spacing: $espacio_letras;
+            font-size: 14px;
+        }
+    }
+    #footer-icons{
+        display: flex;
+        margin-top: 20px;
+
+        #credit-cards{
+            display: flex;
+            flex-basis: 50%;
+            justify-content: flex-start;
+            gap: 10px;
+
+            .fab, .fas{
+                font-size: $icon_size;
+            }
+        }
+        #subir{
+            display: flex;
+            flex-basis: 50%;
+            justify-content: flex-end;
+
+            .icon{
+                font-size: $icon_size;
+                color: black;
+                transition: all 300ms;
+            }
+            .icon:hover{
+                color: $yellow;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+// responsive
+@media(max-width: 1400px) {
+    #container{
+        width: 70%;
+    }
+    #footer{
+        width: 70%;
+    }
+}
+
+@media(max-width: 1100px) {
+    #container{
+        width: 80%;
+
+        #container-flex{
+
+            .contenido{
+
+                p{
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    #footer{
+        width: 80%;
+    }
+}
+
+@media(max-width: 900px){
+    #header{
+        text-align: center;
+    }
+    #container{
+        width: 95%;
+    }
+    #footer{
+        width: 95%;
+    }   
+}
+
+@media(max-width: 650px){
+    .nom-empresa{
+            margin-top: 50px !important;
+            margin-bottom: 50px;
+
+        a{
+            font-size: 60px;
+        }
+    }
+    #container{
+        width: 100%;
+
+        #container-flex{
+            display: block !important;
+    
+            .contenido{
+    
+                h3{
+                    text-align: center;
+                }
+            }
+        }
+    }
+    #footer{
+        margin-top: 50px;
+
+        #footer-enlaces{
+        
+
+            ul{
+                display: block;
+            }
+        }
+        #footer-parrafo{
+            display: none;
+        }
+    }
+}
+
+@media(max-width: 400px){
+
+    .nom-empresa{
+
+        a{
+            font-size: 50px;
+        }
+    }
+    
+}
