@@ -1,0 +1,52 @@
+Aplicación con socket.io y node js para la comunicación entre cliente-servidor web.
+
+1. Creamos node js con "npm init".
+
+2. Creamos dos carpetas (client y server).
+
+3. Instalamos dependencias:
+    npm install express --save
+    npm install socket.io --save
+    npm install nodemon --save-dev
+
+4. En package.json, dentro de "scripts" creamos una nueva propiedad: "start": "nodemon server/index.js".
+    Con esto, conseguimos definir un comando (npm start).
+
+5. Creamos index.js dentro de server.
+
+6. En index.js:
+    1. Cargamos librerías (módulos de node):
+        Cargamos express.
+        Cargamos socket.io.
+    2. Creamos un servidor con express y lo ponemos a la escucha con listen() el cual recibe dos parámetros:
+        - Un número de 4 dígitos a modo de puerto.
+        - Función de callback donde confirmamos y señalamos la conexión y la ruta, respectivamente.
+    3. Creamos una ruta get de prueba.
+    4. Creamos la conexión con el socket.
+    5. Creamos un middleware para cargar una vista estática por defecto.
+
+7. Creamos la vista index.html dentro de client y la confeccionamos:
+    1. Cargamos el script socket.io para permitir la comunicación cliente-servidor.
+    2. Creamos y cargamos main.js (creamos en client).
+
+8. En main.js configuramos al socket para que detecte las conexiones que se conectan a él.
+
+9. En index.js:
+    1. Creamos un array messages para almacenar los mensajes que se envian.
+    2. Mostramos los mensajes a los clientes.
+
+10. En main.js:
+    1. El mensaje lo recoge el cliente.
+    2. Creamos una función llamada render para mostrar los mensajes en la vista index.html.
+
+11. En index.html:
+    1. Maquetamos la caja de los mensajes.
+    2. Creamos un formulario.
+
+12. En main.js:
+    1. Añadimos los mensajes que se introducen en el formulario con la función addMessage().
+    2. Recogemos los mensajes del cliente --> servidor
+
+13. En index.js recogemos el evento para guardar el mensaje en el servidor y poder mostrar a todos los clientes los mensajes actualizados.
+
+14. En main.js hacemos que en el chat aparezca el último mensaje haciendo scroll hacia abajo.

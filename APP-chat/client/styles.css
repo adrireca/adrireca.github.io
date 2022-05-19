@@ -1,0 +1,169 @@
+/* general */
+*{
+    padding: 0;
+    margin: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    background: linear-gradient(19deg, #21D4FD 0%, #ffb921 100%);
+    height: 100vh;
+}
+
+
+
+
+
+#container{
+    width: 40%;
+    height: 525px;
+    margin: auto;
+    margin-top: 40px;
+    font-size: 15px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    box-shadow: 5px 5px 6px #ddd;
+    background: white;
+}
+#principal{
+    width: 100%;
+    height: 385px;
+    margin: auto;
+    font-size: 15px;
+    border-radius: 30px;
+    background: white;
+}
+#principal h2{
+    display: block;
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    color: white;
+    background: linear-gradient(19deg, #21D4FD 0%, #ffb921 100%);
+    font-size: 25px;
+    letter-spacing: 2px;
+    line-height: 70px;
+    border-radius: 30px 30px 0 0;
+}
+#messages{
+    width: 100%;
+    height: 320px;
+    overflow-y: scroll;
+}
+.message{
+    padding: 20px 5px 8px 20px;
+    font-size: 14px;
+}
+.message p{
+    margin-top: 5px;
+}
+#form{
+    padding: 15px;
+    margin-top: 20px;
+}
+#nickname{
+    margin-bottom: 5px;
+    padding: 6px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+}
+.form-box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#text{
+    flex-basis: 88%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+}
+::placeholder{
+    color: gray;
+    font-size: 13px;
+}
+.btn{
+    flex-basis: 7%;
+    padding: 10px;
+    background-color: #79C9A5;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 300ms;
+}
+.btn:hover{
+    opacity: .8;
+}
+
+
+
+
+
+
+
+
+
+
+/* responsive */
+@media (max-width:1500px) {
+    #container{
+        width: 45%;
+    }
+}
+
+@media (max-width:1330px) {
+    #container{
+        width: 50%;
+    }
+}
+
+@media (max-width:1180px) {
+    #container{
+        width: 55%;
+    }
+}
+
+@media (max-width:1080px) {
+    #container{
+        width: 65%;
+    }
+}
+
+@media (max-width:910px) {
+    #container{
+        width: 75%;
+    }
+}
+
+@media (max-width:780px) {
+    #container{
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        margin: 0;
+    }
+    #principal h2{
+        height: 100px;
+        line-height: 100px;
+        border-radius: 0;
+        font-size: 30px;
+    }
+    #messages{
+        height: 480px;
+    }
+    #form{
+        margin-top: 200px;
+    }
+    #nickname{
+        width: 98%;
+        margin-bottom: 15px;
+    }
+    .form-box{
+        flex-direction: column;
+    }
+    #text{
+        margin-bottom: 15px;
+    }
+}

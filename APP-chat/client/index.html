@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat con socket io y node js</title>
+
+    <!-- favicon -->
+    <link rel="icon" type="image/svg" href="imgs/favicon.svg"/>
+
+    <!-- mis estilos -->
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+
+</head>
+
+<body>
+    <div id="container">
+        <div id="principal">
+            <h2>Chat cliente-servidor</h2>
+            <div id="messages"></div>
+        </div>
+
+        <form onsubmit="return addMessage(this)" id="form"> <!--Al enviar el formulario llamamos a la función gracias al evento onsubmit-->
+            <input type="text" class="form-control" id="nickname" placeholder="nick" autocomplete="off">
+            <div class="form-box">
+                <input id="text" placeholder="Mensaje..." autocomplete="off">
+                <input class="btn" type="submit" value=">>">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
