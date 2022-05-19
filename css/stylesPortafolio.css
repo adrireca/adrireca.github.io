@@ -675,23 +675,29 @@ body{
         text-align: end;
         animation: from-right 500ms linear;
     }
+    #header{
+        background-color: #000000;
+    }
+    #video{
+        display: none;
+    }
+    #header .overlay{
+        display: none;
+    }
 }
 
 @media(max-width: 690px){
     #header{
         min-height: 804px;
-        background-color: #000000;
     }
     #video{
         min-height: 804px;
     }
     #video video{
         height: 804px;
-        display: none;
     }
     #header .overlay{
         min-height: 804px;
-        display: none;
     }
     #header .titulo{
         margin-top: 100px;
