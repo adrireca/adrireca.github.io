@@ -83,3 +83,44 @@ section h5{
 .ocultarTarea{
     display: none;
 }
+
+
+
+
+
+/* Responsive */
+@media(max-width: 1350px){
+    #container{
+        width: 40%;
+    }
+}
+
+@media(max-width: 1150px){
+    #container{
+        width: 60%;
+    }
+}
+
+@media(max-width: 800px){
+    #container{
+        width: 90%;
+    }
+}
+
+@media(max-width: 470px){
+    header h2{
+        font-size: 35px;
+    }
+    input[type="text"], input[type="search"], input[type="text"]:focus, input[type="search"]:focus {
+        font-size: 16px;
+    }
+    .task li span {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 320px){
+    header h2 {
+        font-size: 30px;
+    }   
+}

@@ -183,6 +183,9 @@ body{
     #cabecera h1{
         font-size: 100px;
     }
+    #fancybox-title-over {
+        position: absolute;
+    }
 }
 
 @media (max-width: 624px){
@@ -197,5 +200,37 @@ body{
     }
     #galeria h3{
         font-size: 15px;
+    }
+    #footer{
+        display: none;
+    }
+}
+
+@media (max-width: 436px){
+    #cabecera{
+        height: 300px;
+    }
+    #cabecera h1{
+        font-size: 40px;
+        line-height: 300px;
+    }
+}
+
+@media (max-width: 380px){
+    #galeria h3{
+        display: none;
+    }
+    #galeria .img:first-child{
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 325px){
+    #cabecera{
+        height: 200px;
+    }
+    #cabecera h1{
+        font-size: 30px;
+        line-height: 200px;
     }
 }
