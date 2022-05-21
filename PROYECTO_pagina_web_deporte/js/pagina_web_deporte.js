@@ -19,6 +19,17 @@ $(document).ready(function () {
 
 
 
+    //reloj dinámico momentjs
+    setInterval(function () {
+        var reloj = $("#reloj");
+        var formato = moment().format("dddd, D MMM YYYY, LTS");
+        reloj.html(formato);
+    }, 10);
+
+
+
+
+
     //menu animado jquery
     $("#JqueryMenu").navPlugin({
         'itemWidth': 'auto',
@@ -26,18 +37,6 @@ $(document).ready(function () {
         'navEffect': 'slide',
         'speed': 200
     });
-
-
-
-
-
-
-    //reloj dinámico momentjs
-    setInterval(function () {
-        var reloj = $("#reloj");
-        var formato = moment().format("dddd, D MMM YYYY, LTS");
-        reloj.html(formato);
-    }, 10);
 
 
 
