@@ -17,29 +17,29 @@ $(document).ready(function () {
         }, 800);
     }
 
+
     
+
+    //reloj dinámico momentjs
+    setInterval(function () {
+        var reloj = $("#reloj, .date");
+        var formato = moment().format("dddd, D MMM YYYY, LTS");
+        reloj.html(formato);
+    }, 10);
+
 
 
 
     //menu animado jquery
-    $("#JqueryMenu").navPlugin({
-        'itemWidth': 'auto',
-        'itemHeight': 30,
-        'navEffect': 'slide',
-        'speed': 200
+    var $JqueryMenu = $("#JqueryMenu");
+    $JqueryMenu.navPlugin({
+        itemWidth: 'auto',
+        itemHeight: 30,
+        navEffect: 'slide',
+        speed: 200
     });
 
 
-
-
-
-
-    //reloj dinámico momentjs
-    setInterval(function () {
-        var reloj = $("#reloj");
-        var formato = moment().format("dddd, D MMM YYYY, LTS");
-        reloj.html(formato);
-    }, 10);
 
 
 
@@ -137,11 +137,11 @@ $(document).ready(function () {
 
 
     // fecha formateada
-    setInterval(function(){
-        var fecha = $(".date");
-        var formato = moment().format('dddd, D MMM YYYY') //.format("dddd, D MMM YYYY");
-        fecha.html(formato);
-    }, 10);
+    // setInterval(function(){
+    //     var fecha = $(".date");
+    //     var formato = moment().format('dddd, D MMM YYYY') //.format("dddd, D MMM YYYY");
+    //     fecha.html(formato);
+    // }, 10);
 
 
 
