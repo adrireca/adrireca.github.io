@@ -132,20 +132,6 @@ $(document).ready(function () {
 
 
 
-    
-
-
-
-    // fecha formateada
-    // setInterval(function(){
-    //     var fecha = $(".date");
-    //     var formato = moment().format('dddd, D MMM YYYY') //.format("dddd, D MMM YYYY");
-    //     fecha.html(formato);
-    // }, 10);
-
-
-
-
 
 
 

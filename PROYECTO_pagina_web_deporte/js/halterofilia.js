@@ -20,25 +20,24 @@ $(document).ready(function () {
 
 
 
-    //menu animado jquery
-    $("#JqueryMenu").navPlugin({
-        'itemWidth': 'auto',
-        'itemHeight': 30,
-        'navEffect': 'slide',
-        'speed': 200
-    });
-
-
-
-
-
-
     //reloj dinámico momentjs
     setInterval(function () {
-        var reloj = $("#reloj");
+        var reloj = $("#reloj, .date");
         var formato = moment().format("dddd, D MMM YYYY, LTS");
         reloj.html(formato);
     }, 10);
+
+
+
+
+    //menu animado jquery
+    var $JqueryMenu = $("#JqueryMenu");
+    $JqueryMenu.navPlugin({
+        itemWidth: 'auto',
+        itemHeight: 30,
+        navEffect: 'slide',
+        speed: 200
+    });
 
 
 
@@ -128,19 +127,6 @@ $(document).ready(function () {
             scrollTop: 0 //subir hasta arriba del todo
         }, 800); //tiempo del recorrido
     });
-
-
-
-    
-
-
-
-    // fecha formateada
-    setInterval(function(){
-        var fecha = $(".date");
-        var formato = moment().format('dddd, D MMM YYYY') //.format("dddd, D MMM YYYY");
-        fecha.html(formato);
-    }, 10);
 
 
 
