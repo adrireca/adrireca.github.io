@@ -31,11 +31,12 @@ $(document).ready(function () {
 
 
     //menu animado jquery
-    $("#JqueryMenu").navPlugin({
-        'itemWidth': 'auto',
-        'itemHeight': 30,
-        'navEffect': 'slide',
-        'speed': 200
+    var $JqueryMenu = $("#JqueryMenu");
+    $JqueryMenu.navPlugin({
+        itemWidth: 'auto',
+        itemHeight: 30,
+        navEffect: 'slide',
+        speed: 200
     });
 
 
