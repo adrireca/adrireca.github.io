@@ -577,10 +577,13 @@ body{
 @media(max-width: 1502px){
     #header{
         max-height: 800px;
+        background-color: #000000;
     }
     #header .overlay{
-        width: 100%;
-        max-height: 800px;
+        display: none;
+    }
+    #video{
+        display: none;
     }
     #header .imagen-header{
         display: none;
@@ -597,6 +600,12 @@ body{
     }
     #header .titulo p{
         margin-left: 0;
+    }
+    #portafolio{
+        width: 100%;
+    }
+    #formacion .card{
+        width: 55% !important;
     }
 }
 
@@ -653,9 +662,6 @@ body{
     #lateral{
         display:  none;
     }
-    #portafolio{
-        width: 100%;
-    }
     #portafolio #proyecto{
         margin-right: 1rem;
         margin-left: 1rem;
@@ -664,6 +670,9 @@ body{
     }
     #formacion > p{
         width: 100%;
+    }
+    #formacion .card{
+        width: 70% !important;
     }
 }
 
@@ -683,6 +692,21 @@ body{
     }
     #header .overlay{
         display: none;
+    }
+    #formacion .card{
+        width: 80% !important;
+    }
+}
+
+@media(max-width: 959px){
+    #portafolio #proyecto:last-child img {
+        height: auto;
+      }
+}
+
+@media(max-width: 767px){
+    #formacion .card{
+        width: 60% !important;
     }
 }
 
@@ -726,8 +750,14 @@ body{
     .descripcion p{
         font-size: 16px;
     }
-    #formacion{
+    /* #formacion{
         min-height: 500px;
+    } */
+}
+
+@media(max-width: 620px){
+    #formacion .card{
+        width: 70% !important;
     }
 }
 
@@ -741,10 +771,26 @@ body{
         margin-bottom: 1.5rem;
         flex-basis: 50%;
     }
+    #portafolio #proyecto img {
+        height: auto;
+      }
     .btn{
         font-size: 12px;
     }
     #formacion .card{
-        width: 60% !important;
+        width: 80% !important;
+    }
+}
+
+@media(max-width: 440px){
+    #formacion{
+        min-height: 460px;
+    }
+}
+
+@media (max-width: 440px){
+    #formacion {
+        min-height: 400px;
+
     }
 }
