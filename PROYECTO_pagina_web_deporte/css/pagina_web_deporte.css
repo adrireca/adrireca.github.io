@@ -252,15 +252,17 @@ body{
     border-bottom: 1px solid white;
 }
 #header .header_img{
-    width: 100%;
-    min-height: 800px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
     background: url("../img/fd-gen-desk_030320085750.jpg");
-    background-size: 100% 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 #header .header_titulo{
-    height: 500px;
     margin: 0 auto;
     margin-left: 15%;
+    margin-bottom: 15%;
 }
 #header .titulo_content{
     width: 100%;
@@ -628,22 +630,15 @@ body{
     }
 }
 
-@media(max-width: 1210px){
+@media(max-width: 1220px){
     #header_principal .search form {
         width: 400px;
     }
     #header_principal .search input[type="submit"]{
         margin-left: 375px;
     }
-    #header .header_titulo{
-        width: 100% !important;
-        margin-left: 0;
-    }
     #header .header_titulo h1{
-        font-size: 35px;
-    }
-    #header .titulo_content{
-        width: 70%;
+        font-size: 30px;
     }
     #container .seccion_deporte{
         padding-top: 60px;
@@ -663,6 +658,15 @@ body{
     #header_principal .search input[type="submit"]{
         margin-left: 310px;
     }
+    #header .header_titulo h1{
+        font-size: 25px;
+    }
+    #header .header_titulo .titulo_content .header_description{
+        width: 100% !important;
+    }
+    #header .header_img h3 {
+        font-size: 14px;
+    }
     #container, #footer {
         width: 100%;
     }
@@ -671,21 +675,15 @@ body{
     }
 }
 
-@media(max-width: 820px){
+@media(max-width: 870px){
     #logotipo{
         margin-left: 1%;
     }
     #JqueryMenu li {
         font-size: 15px;
     }
-    #header .header_img{
-        min-height: 620px;
-    }
     #header .header_titulo h1 {
-        font-size: 30px;
-    }
-    #header .header_img h3 {
-        font-size: 15px;
+        font-size: 20px;
     }
     #container .categoria .img_category img {
         width: 80px;
@@ -714,7 +712,7 @@ body{
     }
 }
 
-@media(max-width: 715px){
+@media(max-width: 750px){
     #logotipo{
         display: none;
     }
@@ -723,6 +721,13 @@ body{
     }
     #header_principal .search input[type="submit"] {
         margin-left: 95%;
+    }
+    #header .header_titulo{
+        width: 100% !important;
+        margin-left: 0;
+    }
+    #header .header_titulo .titulo_content .header_description {
+        width: 80% !important;
     }
     #container .seccion_deporte, #carouselExampleControls, #container #div_posts, #container #div_calculadora {
         width: 100%;
@@ -756,12 +761,14 @@ body{
     }
 }
 
-@media(max-width: 500px){
+@media(max-width: 650px){
     #header #reloj{
         display: none;
     }
+    #header .first_menu{
+        display: flex;
+    }
     #header .first_menu ul li{
-        float: none;
         margin: 0px 0 5px 10px;
     }
     #JqueryMenu li {
@@ -771,20 +778,51 @@ body{
     #JqueryMenu > li:first-child {
         margin-left: 0;
     }
-    #header .header_img {
-        min-height: 430px;
+    #header .header_titulo .titulo_content .header_description {
+        width: 100% !important;
+        opacity: 0;
     }
     #header .header_titulo {
-        width: 60% !important;
-        height: 100%;
+        margin-bottom: 0%;
     }
     #header .header_titulo h1 {
-        font-size: 25px;
+        font-size: 16px;
     }
-    #header .header_img h3 {
-        display: none;
+    #header .titulo_content {
+        margin-bottom: 40px;
+        margin-top: 40px;
     }
     #calculadora {
         width: 100%;
+        margin-bottom: 0;
+    }
+}
+
+@media(max-width: 450px){
+    #header .first_menu {
+        display: none;
+    }
+    #header_principal .search input[type="submit"] {
+        margin-left: 93%;
+    }
+    #JqueryMenu > li:first-child {
+        display: none;
+    }
+    #header .header_titulo h1 {
+        font-size: 13px;
+        margin-right: 38%;
+    }
+    #header .header_titulo > div > div{
+        margin-bottom: 0 !important;
+    }
+    #header .titulo_content {
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+}
+
+@media(max-width: 330px){
+    #JqueryMenu li {
+        font-size: 10px;
     }
 }
