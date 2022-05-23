@@ -260,7 +260,7 @@ body{
 }
 #category .img-cat{
     width: 500px;
-    min-height: 400px;
+    height: auto;
     position: relative;
 }
 #category img{
