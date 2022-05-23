@@ -36,6 +36,10 @@ body{
     float: none;
 }
 
+.row{
+    margin-right: 0;
+    margin-left: 0;
+}
 
 
 
@@ -777,20 +781,35 @@ body{
     .btn{
         font-size: 12px;
     }
+    #formacion{
+        min-height: 500px;
+    }
+    #formacion-contacto {
+        margin-left: 0;
+        margin-right: 0;
+    }
     #formacion .card{
         width: 80% !important;
     }
-}
-
-@media(max-width: 440px){
-    #formacion{
-        min-height: 460px;
+    #form{
+        padding: 1rem !important;
     }
 }
 
-@media (max-width: 440px){
+@media (max-width: 480px){
+    #formacion .card {
+        width: 70% !important;
+    }
     #formacion {
-        min-height: 400px;
+        min-height: 420px;
+    }
+}
 
+@media (max-width: 360px){
+    #header .titulo h1 {
+        font-size: 40px;
+    }
+    #footer{
+        font-size: 12px;
     }
 }
