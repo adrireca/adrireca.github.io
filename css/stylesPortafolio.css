@@ -424,7 +424,7 @@ body{
     margin: auto;
     margin-bottom: 10px;
 }
-.animated_box{
+/* .animated_box{
     opacity: 0;
     transition: all 500ms;
 }
@@ -438,7 +438,7 @@ body{
     100%{
         transform: translateY(0);
     }
-}
+} */
 
 
 
@@ -577,6 +577,15 @@ body{
     }
 
 }
+@media(max-width: 1750px){
+    #portafolio{
+        width: 100%;
+    }
+    #portafolio #proyecto img {
+        height: 170px;
+    }
+}
+
 
 @media(max-width: 1502px){
     #header{

@@ -95,20 +95,20 @@ $(document).ready( () => {
 
 
     //animated box projects
-    let box_projects = document.querySelectorAll(".animated_box");
+    // let box_projects = document.querySelectorAll(".animated_box");
     
-    function mostrarProjects(){
-        let scrollTop = document.documentElement.scrollTop; //detectamos la cantidad de scroll
-        for (let i in box_projects) {
-            let alturaBoxProjects = box_projects[i].offsetTop; //detectamos la altura del inicio a los proyectos
-            if(alturaBoxProjects - 500 < scrollTop){
-                box_projects[i].style.opacity = 1;
-                box_projects[i].classList.add("animate_up");
-            }
-        }
-    }
+    // function mostrarProjects(){
+    //     let scrollTop = document.documentElement.scrollTop; //detectamos la cantidad de scroll
+    //     for (let i in box_projects) {
+    //         let alturaBoxProjects = box_projects[i].offsetTop; //detectamos la altura del inicio a los proyectos
+    //         if(alturaBoxProjects - 500 < scrollTop){
+    //             box_projects[i].style.opacity = 1;
+    //             box_projects[i].classList.add("animate_up");
+    //         }
+    //     }
+    // }
 
-    window.addEventListener("scroll",mostrarProjects);
+    // window.addEventListener("scroll",mostrarProjects);
 
 
 

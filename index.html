@@ -13,6 +13,9 @@
     <!-- fontAwesome -->
     <link rel="stylesheet" href="fontawesome-free-5.15.4-web/fontawesome-free-5.15.4-web/css/all.css"/>
 
+    <!-- Animate AOS css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- estilos css y bootstrap -->
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="css/stylesPortafolio.css" />
@@ -91,7 +94,7 @@
         <!-- título e imagen-header -->
         <div class="row">
             <div class="col-5 titulo d-block">
-                <h1>
+                <h1 data-aos="fade-right">
                     <span>H</span><span>o</span><span>l</span><span>a</span><span>,</span><br>
                     <span>s</span><span>o</span><span>y</span>
                     <strong>A</strong><span>d</span><span>r</span><span>i</span><span>á</span><span>n</span><span>,</span>
@@ -99,13 +102,13 @@
                     <span>d</span><span>e</span><span>s</span><span>a</span><span>r</span><span>r</span><span>o</span><span>l</span><span>l</span><span>a</span><span>d</span><span>o</span><span>r</span>
                     <span>w</span><span>e</span><span>b</span>
                 </h1>
-                <p class="text-secondary">Desarrollador frontend</p>
+                <p class="text-secondary" data-aos="fade-right">Desarrollador frontend</p>
                 <form class="d-flex justify-content-center mt-4">
-                    <a href="#" class="btn btn-outline-success" id="link-contacto-tit">Contacto</a>
+                    <a href="#" class="btn btn-outline-success" id="link-contacto-tit" data-aos="fade-up">Contacto</a>
                 </form>
             </div>
             <div class="col imagen-header text-center">
-                <img src="imgs/workspace1-flat-lay_122064.svg" class="icon_header">
+                <img src="imgs/workspace1-flat-lay_122064.svg" class="icon_header" data-aos="zoom-in">
             </div>
         </div>
 
@@ -125,19 +128,19 @@
 
         <!-- sobre mí -->
         <section id="about" class="col-md-8">
-            <div class="barra_seccion">
+            <div class="barra_seccion" data-aos="fade-down">
                 <h3><span class="color-letra">S</span>obre <span class="color-letra">m</span>í...</h3>
             </div>
 
             <div class="sobre_mi">
                 
                 <div class="img_perfil">
-                    <div class="marco-foto"></div>
-                    <img src="imgs/foto_perfil_1.png" />
+                    <div class="marco-foto" data-aos="fade-up-right"></div>
+                    <img src="imgs/foto_perfil_1.png" data-aos="fade-up-left"/>
                 </div>
                 
 
-                <div class="descripcion">
+                <div class="descripcion" data-aos="fade-right">
                     <p>Me apasiona el desarrollo de aplicaciones y páginas web.</p>
                     <p>Este interés por el mundo de la programación tuvo lugar cuando comencé a cursar un módulo de
                         grado superior de FP en el instituto,
@@ -154,13 +157,13 @@
 
             <!-- skillset -->
             <section id="skillset">
-                <div class="barra_seccion">
+                <div class="barra_seccion" data-aos="fade-down">
                     <h3><span class="color-letra">Skill</span>sets</h3>
                     <hr class="text-white">
                 </div>
                 <div id="slider" class="carousel slide" data-ride="carousel">
 
-                    <div class="carousel-inner">
+                    <div class="carousel-inner" data-aos="fade-up">
                         <div class="carousel-item active skillsets" data-bs-toggle="tooltip" title="html5">
                             <img class="d-block mx-auto" src="skills/html5.svg" />
                         </div>
@@ -250,7 +253,7 @@
 
         <section id="portafolio" class="row col-md-11">
 
-            <div class="card animated_box col p-0" id="proyecto">
+            <div class="card col p-0" id="proyecto" data-aos="zoom-in-up">
                 <img class="card-img-top img-fluid"
                     src="imgs/imgs_proyectos/galeria_fotos.png" />
                 <div class="card-body mt-2">
@@ -265,7 +268,7 @@
                         target="_blank">Entrar</a>
                 </div>
             </div>
-            <div class="card animated_box col p-0" id="proyecto">
+            <div class="card col p-0" id="proyecto" data-aos="zoom-in-up">
                 <img class="card-img-top img-fluid"
                     src="imgs/imgs_proyectos/proyecto_web_deporte.png" />
                 <div class="card-body mt-2">
@@ -279,7 +282,7 @@
                         class="btn btn-dark mt-3" target="_blank">Entrar</a>
                 </div>
             </div>
-            <div class="card animated_box col p-0" id="proyecto">
+            <div class="card col p-0" id="proyecto" data-aos="zoom-in-up">
                 <img class="card-img-top img-fluid" src="imgs/imgs_proyectos/app-to-do-list.png" />
                 <div class="card-body mt-2">
                     <h3 class="card-title">Proyecto 3</h3>
@@ -292,7 +295,7 @@
                         target="_blank">Entrar</a>
                 </div>
             </div>
-            <div class="card animated_box col p-0" id="proyecto">
+            <div class="card col p-0" id="proyecto" data-aos="zoom-in-up">
                 <img class="card-img-top img-fluid" src="imgs/imgs_proyectos/app-chat.png" />
                 <div class="card-body mt-2">
                     <h3 class="card-title">Proyecto 4</h3>
@@ -305,7 +308,7 @@
                         target="_blank">Entrar</a>
                 </div>
             </div>
-            <div class="card animated_box col p-0" id="proyecto">
+            <div class="card col p-0" id="proyecto" data-aos="zoom-in-up">
                 <img class="card-img-top img-fluid" src="imgs/imgs_proyectos/tienda_online.png" />
                 <div class="card-body mt-2">
                     <h3 class="card-title">Proyecto 5</h3>
@@ -328,7 +331,7 @@
 
     <!-- formación -->
     <div class="row" id="formacion-contacto">
-        <section class="col-md-6" id="formacion">
+        <section class="col-md-6" id="formacion" data-aos="flip-left">
             <div class="barra_seccion">
                 <h3>Formación</h3>
                 <hr>
@@ -372,7 +375,7 @@
         <!-- contacto -->
         <section class="col-md-6" id="contacto">
             <div class="barra_seccion">
-                <h3>Contacto</h3>
+                <h3 data-aos="fade-down">Contacto</h3>
                 <hr>
             </div>
 
@@ -423,8 +426,18 @@
     <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
 
+    <!-- Animate AOS js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
     <!-- mi js -->
     <script src="js/portafolio.js" ></script>
+    <script>
+        AOS.init({
+            duration:1500,
+            once:true
+        });
+    </script>
 
 </body>
 
