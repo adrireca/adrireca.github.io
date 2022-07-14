@@ -6,12 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio</title>
-    
+
     <!-- favicon -->
     <link rel="icon" type="image/svg" href="favicon/favicon1.svg">
-
-    <!-- fontAwesome -->
-    <link rel="stylesheet" href="fontawesome-free-5.15.4-web/fontawesome-free-5.15.4-web/css/all.css"/>
 
     <!-- Animate AOS css -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -133,12 +130,12 @@
             </div>
 
             <div class="sobre_mi">
-                
+
                 <div class="img_perfil">
                     <div class="marco-foto" data-aos="fade-up-right"></div>
-                    <img src="imgs/foto_perfil_1.png" data-aos="fade-up-left"/>
+                    <img src="imgs/foto_perfil_1.png" data-aos="fade-up-left" />
                 </div>
-                
+
 
                 <div class="descripcion" data-aos="fade-right">
                     <p>Me apasiona el desarrollo de aplicaciones y páginas web.</p>
@@ -148,7 +145,7 @@
                         de investigar
                         y seguir aprendiendo.</p>
                     <p>Me considero una persona autodidacta en constante aprendizaje en nuevas tecnologías, responsable
-                        y con muchas ganas de seguir avanzando y perfeccionando conceptos con un objetivo claro, 
+                        y con muchas ganas de seguir avanzando y perfeccionando conceptos con un objetivo claro,
                         llegar a fullstack.</p>
                 </div>
             </div>
@@ -157,8 +154,8 @@
 
             <!-- skillset -->
             <section id="skillset">
-                <div class="barra_seccion" data-aos="fade-down">
-                    <h3><span class="color-letra">Skill</span>sets</h3>
+                <div class="barra_seccion">
+                    <h3 data-aos="fade-down"><span class="color-letra">Skill</span>sets</h3>
                     <hr class="text-white">
                 </div>
                 <div id="slider" class="carousel slide" data-ride="carousel">
@@ -212,9 +209,9 @@
                         <div class="carousel-item skillsets" data-bs-toggle="tooltip" title="wordpress">
                             <img class="d-block mx-auto" src="skills/wordpress.svg" />
                         </div>
-                        <!-- <div class="carousel-item skillsets" data-bs-toggle="tooltip" title="Java">
+                        <div class="carousel-item skillsets" data-bs-toggle="tooltip" title="Java">
                             <img class="d-block mx-auto" src="skills/java.svg" />
-                        </div> -->
+                        </div>
                     </div>
 
                     <a class="carousel-control-prev" href="#slider" role="button" data-bs-slide="prev">
@@ -251,9 +248,84 @@
             <hr>
         </div>
 
-        <section id="portafolio" class="row col-md-11">
+        <section id="portafolio">
 
-            <div class="card col p-0" id="proyecto" data-aos="zoom-in-up">
+            <div class="projects row">
+                <div class="col-3" id="project" data-aos="zoom-in-up">
+                    <figure class="img-project">
+                        <img src="imgs/imgs_proyectos/galeria_fotos.png" />
+                        <figcaption class="overlay_project">
+                            <h3>Gallery.</h3>
+                            <a href="PROYECTO_galeria_fotos2/galeria_fotos.html" class="btn mt-3" target="_blank">Visit website
+                                <i class="fa-solid fa-angle-right"></i>
+                            </a>
+                        </figcaption>
+                        <div class="background_overlay_project"></div>
+                    </figure>
+                </div>
+                <div class="col-3" id="project" data-aos="zoom-in-up">
+                    <figure class="img-project">
+                        <img src="imgs/imgs_proyectos/proyecto_web_deporte.png" />
+                        <figcaption class="overlay_project">
+                            <h3>Sport template.</h3>
+                            <a href="PROYECTO_pagina_web_deporte/index.html" class="btn mt-3" target="_blank">Visit website
+                                <i class="fa-solid fa-angle-right"></i>
+                            </a>
+                        </figcaption>
+                        <div class="background_overlay_project"></div>
+                    </figure>
+                </div>
+                <div class="col-3" id="project" data-aos="zoom-in-up">
+                    <figure class="img-project">
+                        <img src="imgs/imgs_proyectos/app-to-do-list.png" />
+                        <figcaption class="overlay_project">
+                            <h3>To do list.</h3>
+                            <a href="APP-lista-tareas/app-lista.html" class="btn mt-3" target="_blank">Visit website
+                                <i class="fa-solid fa-angle-right"></i>
+                            </a>
+                        </figcaption>
+                        <div class="background_overlay_project"></div>
+                    </figure>
+                </div>
+                <div class="col-3" id="project" data-aos="zoom-in-up">
+                    <figure class="img-project">
+                        <img src="imgs/imgs_proyectos/app-chat.png" />
+                        <figcaption class="overlay_project">
+                            <h3>Chat.</h3>
+                            <a href="https://github.com/adrireca/App_chat" class="btn mt-3" target="_blank">Visit website
+                                <i class="fa-solid fa-angle-right"></i>
+                            </a>
+                        </figcaption>
+                        <div class="background_overlay_project"></div>
+                    </figure>
+                </div>
+                <div class="col-3" id="project" data-aos="zoom-in-up">
+                    <figure class="img-project">
+                        <img src="imgs/imgs_proyectos/tienda_online.png" />
+                        <figcaption class="overlay_project">
+                            <h3>Ecommerce template.</h3>
+                            <a href="APP_tienda_online/index.html" class="btn mt-3" target="_blank">Visit website
+                                <i class="fa-solid fa-angle-right"></i>
+                            </a>
+                        </figcaption>
+                        <div class="background_overlay_project"></div>
+                    </figure>
+                </div>
+                <div class="col-3" id="project" data-aos="zoom-in-up">
+                    <figure class="img-project">
+                        <img src="https://via.placeholder.com/600x400" />
+                        <figcaption class="overlay_project">
+                            <h3>Housekeeping.</h3>
+                            <a href="#" class="btn mt-3" target="_blank">Visit website
+                                <i class="fa-solid fa-angle-right"></i>
+                            </a>
+                        </figcaption>
+                        <div class="background_overlay_project"></div>
+                    </figure>
+                </div>
+            </div>
+
+            <!--<div class="card col p-0" id="proyecto" data-aos="zoom-in-up">
                 <img class="card-img-top img-fluid"
                     src="imgs/imgs_proyectos/galeria_fotos.png" />
                 <div class="card-body mt-2">
@@ -320,7 +392,7 @@
                     <a href="APP_tienda_online/index.html" class="btn btn-dark mt-3"
                         target="_blank">Entrar</a>
                 </div>
-            </div>
+            </div>-->
     </div>
 
     </section>
@@ -416,6 +488,9 @@
 
 
 
+    <!-- fontAwesome js-->
+    <!-- <link rel="stylesheet" href="fontawesome-free-5.15.4-web/fontawesome-free-5.15.4-web/css/all.css" /> -->
+    <script src="https://kit.fontawesome.com/46a4bd0895.js" crossorigin="anonymous"></script>
 
     <!--jquery-->
     <!-- <script src="JQuery/jquery-3.6.0.min.js"></script> -->
@@ -431,11 +506,11 @@
 
 
     <!-- mi js -->
-    <script src="js/portafolio.js" ></script>
+    <script src="js/portafolio.js"></script>
     <script>
         AOS.init({
-            duration:1500,
-            once:true
+            duration: 1500,
+            once: true
         });
     </script>
 
