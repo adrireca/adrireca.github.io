@@ -38,7 +38,7 @@ body{
 /* titulo */
 #cabecera{
     width: 100%;
-    height: 400px;
+    height: 60vh;
     background: url("../imgs/header_background.jpg");
     animation: backHeader 7s linear;
     overflow: hidden;
@@ -59,7 +59,7 @@ body{
     text-align: center;
     font-family:'amatic';
     text-transform: uppercase;
-    line-height: 400px;
+    line-height: 60vh;
     text-shadow: 1px 1px 1px #9F00A7, 
                 1px 2px 1px #9F00A7, 
                 1px 3px 1px #9F00A7, 

@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
     //efecto fadeIn
-    $("body").hide().fadeIn(3000);
+    // $("body").hide().fadeIn(3000);
 
 
     // fancybox
