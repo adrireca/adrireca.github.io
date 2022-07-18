@@ -369,6 +369,10 @@
                 </div>
             </form>
         </div>
+
+        <!-- conexión -->
+        <?php include('conexionBBDD/registro_consulta.php') ?>
+
     </section>
 
 
