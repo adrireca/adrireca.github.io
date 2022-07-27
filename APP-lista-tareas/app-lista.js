@@ -1,60 +1,69 @@
-function inicio(){
-    const add = document.querySelector(".form-add");
-    add.addEventListener("submit",añadirTarea,false);
-
-    const lista = document.querySelector(".list-group");
-    lista.addEventListener("click",eliminarTarea,false);
-
-    const buscar = document.getElementById("search");
-    buscar.addEventListener("keyup",buscarTarea,false);
-}
-
-
-
-function getPlantillaTarea(nuevaTarea){
-    lista = document.querySelector(".list-group");
-
-    const plantilla = `
-    <li class="list-group-item d-flex justify-content-between align-items-center">
-        <span>${nuevaTarea}</span>
-        <i class="far fa-trash-alt delete"></i>
-    </li>
-    `;
-    lista.innerHTML += plantilla;
-}
-
-
-
-
-function añadirTarea(e){
+function crearTarea(e) {
     e.preventDefault();
 
-    var nuevaTarea = document.getElementById("add").value.trim(); //con trim() ignoramos los posibles espacios
+    var formulario = document.querySelector(".form-add");
 
-    //si el formulario está vacío, NO añadimos ninguna tarea.
-    if(nuevaTarea.length){
-        getPlantillaTarea(nuevaTarea);
+    formulario.addEventListener('submit', () => {
+        var titulo = document.getElementById('add').value;
 
-        document.getElementById("add").value = "";
-    }
+        if (titulo.length >= 1) {
+            localStorage.setItem(titulo, titulo);
+            document.getElementById("add").value = "";
+        }
+    });
+
+    leer_mostrar();
+
+    let borrar = document.querySelector(".list-group");
+    borrar.addEventListener("click",eliminarTarea,false);
+
+    let buscar = document.getElementById("search");
+    buscar.addEventListener("keyup",buscarTarea,false);
+
 }
 
 
 
 
-function eliminarTarea(e){
-    if(e.target.classList.contains('delete')){
-        e.target.parentElement.remove();
+
+function leer_mostrar() {
+    var ul = document.querySelector('.list-group');
+    for (var i in localStorage) {
+        if(typeof localStorage[i] == 'string'){
+            let plantilla = `
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <span>${localStorage[i]}</span>
+                <i class="far fa-trash-alt delete"></i>
+            </li>
+        `;
+    
+        ul.innerHTML += plantilla;
+        }
+
     }
+
 }
+
+
+
+
+
+function eliminarTarea(e) {
+    let valorTarea = e.target.parentElement.children[0].innerText;
+    let tarea = e.target.parentElement;
+    tarea.remove();
+    localStorage.removeItem(valorTarea,valorTarea);
+
+}
+
 
 
 
 
 function buscarTarea(){
-    buscar = document.getElementById("search");
+    let buscar = document.getElementById("search");
     
-    const buscarUsuario = buscar.value.trim().toLowerCase();
+    let buscarUsuario = buscar.value.trim().toLowerCase();
     
     compararTarea(buscarUsuario);
 }
@@ -62,8 +71,9 @@ function buscarTarea(){
 
 
 
+
 function compararTarea(buscarUsuario){
-    lista = document.querySelector(".list-group");
+    let lista = document.querySelector(".list-group");
     Array.from(lista.children)
         .filter(task => !task.textContent.toLowerCase().includes(buscarUsuario))
         .forEach(filteredTask => {
@@ -82,4 +92,5 @@ function compararTarea(buscarUsuario){
 
 
 
-window.addEventListener("load",inicio,false);
+
+window.addEventListener("load", crearTarea, false);
