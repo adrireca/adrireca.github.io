@@ -50,9 +50,10 @@ function leer_mostrar() {
 
 function eliminarTarea(e) {
     let valorTarea = e.target.parentElement.children[0].innerText;
-    let tarea = e.target.parentElement;
-    tarea.remove();
-    localStorage.removeItem(valorTarea,valorTarea);
+    if(e.target.classList.contains('delete')){
+        e.target.parentElement.remove();
+        localStorage.removeItem(valorTarea,valorTarea);
+    }
 
 }
 
