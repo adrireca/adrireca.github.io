@@ -61,6 +61,16 @@ $(document).ready( () => {
     });
 
 
+    var link_servicios = $("#link_servicios");
+    link_servicios.click((e) => {
+        e.preventDefault();
+
+        $("html, body").animate({
+            scrollTop: parseInt($("#servicios").offset().top)
+        }, 800);
+    });
+
+
     var link_seccion_portafolio = $("#link_seccion_portafolio");
     link_seccion_portafolio.click(function(e){
         e.preventDefault();

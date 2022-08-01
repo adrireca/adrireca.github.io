@@ -404,6 +404,57 @@ body {
 
 
 
+/********************************* FREELANCE *********************************/
+.seccion_freelance{
+    width: 100%;
+    background-color: #212121;
+    padding: 100px 0 120px 0;
+}
+.seccion_freelance .barra_seccion p{
+    color: #fff;
+    text-align: center;
+    padding: 10px 0 30px 0;
+    font-size: 1.2rem;
+}
+.div_freelance{
+    max-width: 1500px;
+    margin: auto;
+    text-align: center;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.pasos_freelance{
+    border: 1px solid #04e3a8;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 30px 40px;
+    border-radius: 20px;
+}
+.pasos_freelance i{
+    color: #04e3a8;
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+.pasos_freelance h4{
+    color: #04e3a8;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.pasos_freelance p{
+    color: #fff;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 1.2px;
+}
+
+
+
+
+
+
+
+
 /********************************* PROYECTOS *********************************/
 #seccion-portafolio{
     background-color: #fff;
@@ -815,6 +866,10 @@ body {
         display: none;
     }
 
+    .pasos_freelance i{
+        font-size: 3rem;
+    }
+
     .parrafo_cv p {
         font-size: 1.2rem;
     }
@@ -855,6 +910,16 @@ body {
     #header .titulo p {
         margin-left: 0;
     }
+
+    .div_freelance{
+        width: 80%;
+    }
+    .pasos_freelance{
+        flex-basis: 40%;
+        margin-bottom: 20px;
+        height: 300px;
+    }
+
     #portafolio .projects #project {
         width: 40%;
     }
@@ -874,6 +939,13 @@ body {
     #header .navbar-nav {
         text-align: end;
         animation: from-right 500ms linear;
+    }
+
+    .div_freelance{
+        width: 90%;
+    }
+    .pasos_freelance{
+        height: 330px;
     }
 
     #footer #social_footer {
@@ -949,6 +1021,18 @@ body {
     .descripcion p {
         font-size: 16px;
     }
+
+    .div_freelance{
+        width: 80%;
+    }
+    .pasos_freelance{
+        flex-basis: 100%;
+        height: 300px;
+    }
+    .pasos_freelance i{
+        font-size: 4rem;
+    }
+
     #portafolio .projects #project {
         width: 80%;
     }
@@ -967,6 +1051,11 @@ body {
     #social a .fa-brands {
         font-size: 1.5rem;
     }
+
+    .div_freelance {
+        width: 90%;
+    }
+
     #portafolio .projects #project {
         width: 100%;
     }
@@ -1011,6 +1100,17 @@ body {
     #header .titulo h1 {
         font-size: 3rem;
     }
+
+    .seccion_freelance {
+        padding: 60px 0 80px 0;
+    }
+    .div_freelance{
+        width: 95%;
+    }
+    .pasos_freelance i{
+        font-size: 3rem;
+    }
+
     #seccion-portafolio {
         padding: 0;
     }
@@ -1022,5 +1122,12 @@ body {
     }
     .div_download_cv .parrafo_cv{
         margin-bottom: 25px;
+    }
+}
+
+@media(max-width:360px){
+    .pasos_freelance{
+        height: 330px;
+        padding: 30px 15px;
     }
 }
