@@ -973,6 +973,19 @@ body {
     }
 }
 
+@media(max-width: 750px){
+    .div_freelance{
+        width: 60%;
+    }
+    .pasos_freelance{
+        flex-basis: 100%;
+        height: 300px;
+    }
+    .pasos_freelance i{
+        font-size: 4rem;
+    }
+}
+
 @media(max-width: 690px) {
     #header {
         min-height: 775px;
@@ -1022,16 +1035,8 @@ body {
         font-size: 16px;
     }
 
-    .div_freelance{
-        width: 80%;
-    }
-    .pasos_freelance{
-        flex-basis: 100%;
-        height: 300px;
-    }
-    .pasos_freelance i{
-        font-size: 4rem;
-    }
+    
+
 
     #portafolio .projects #project {
         width: 80%;
